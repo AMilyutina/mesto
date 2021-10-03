@@ -1,0 +1,9 @@
+.content {
+  max-width: 800px;
+}
+
+@media screen and (max-width: 654px) {
+  .content {
+    max-width: 320px;
+   }
+}

@@ -1,0 +1,12 @@
+.popup__name {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  background-color: transparent;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 17px;
+  color: #000;
+  max-width: 358px;
+  margin: auto 36px;
+}

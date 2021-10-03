@@ -1,0 +1,7 @@
+.element__place {
+  background-color: #fff;
+  min-height: 361px;
+  width: 100%;
+  max-width: 282px;
+  border-radius: 10px;
+}
