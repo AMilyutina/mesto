@@ -2,9 +2,6 @@
   background: transparent url(../../../images/Add-Button.svg) center no-repeat;
   height: 50px;
   width: 150px;
-  position: absolute;
-  right: 0;
-  top: 24px;
   padding: 14px 64px;
   border: 2px solid #E5E5E5;
   border-radius: 2px;
