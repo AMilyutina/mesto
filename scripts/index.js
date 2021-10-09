@@ -5,6 +5,8 @@ let modalWindowName = document.querySelector('.popup__input_type_name');
 let modalWindowDescription = document.querySelector('.popup__input_type_description');
 let profileName = document.querySelector('.profile__title');
 let profileDescription = document.querySelector('.profile__subtitle');
+let formElement = modalWindow.querySelector('.popup__content');
+
 
 function openModalWindow() {
   modalWindowName.value = profileName.textContent;
@@ -19,3 +21,14 @@ function closeModalWindow() {
 
 profileEditBtn.addEventListener('click', openModalWindow);
 modalWindowCloseBtn.addEventListener('click', closeModalWindow);
+
+ function formSubmitHandler (evt) {
+  evt.preventDefault();
+  let name = modalWindowName.value;
+  let description = modalWindowDescription.value;
+  profileName.textContent = name;
+  profileDescription.textContent = description;
+  closeModalWindow();
+  };
+
+formElement.addEventListener('submit', formSubmitHandler);

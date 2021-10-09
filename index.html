@@ -27,7 +27,7 @@
               <button type="button" class="profile__edit-button"></button>
             </div>
           </div>
-          <button class="profile__add-button"></button>
+          <button type="button" class="profile__add-button"></button>
         </section>
         <section class="elements">
           <div class="element">
@@ -37,10 +37,10 @@
                 alt="Карачаевск"
                 class="element__photo"
               />
-              <h3 class="element__title">
-                Карачаевск
+              <div class="element__description">
+                <h3 class="element__title">Карачаевск</h3>
                 <button type="button" class="element__like"></button>
-              </h3>
+              </div>
             </div>
           </div>
           <div class="element">
@@ -50,10 +50,10 @@
                 alt="Гора Эльбрус"
                 class="element__photo"
               />
-              <h3 class="element__title">
-                Гора Эльбрус
+              <div class="element__description">
+                <h3 class="element__title">Гора Эльбрус</h3>
                 <button type="button" class="element__like"></button>
-              </h3>
+              </div>
             </div>
           </div>
           <div class="element">
@@ -63,10 +63,10 @@
                 alt="Домбай"
                 class="element__photo"
               />
-              <h3 class="element__title">
-                Домбай
+              <div class="element__description">
+                <h3 class="element__title">Домбай</h3>
                 <button type="button" class="element__like"></button>
-              </h3>
+              </div>
             </div>
           </div>
           <div class="element">
@@ -76,10 +76,10 @@
                 alt="Гора Эльбрус"
                 class="element__photo"
               />
-              <h3 class="element__title">
-                Гора Эльбрус
+              <div class="element__description">
+                <h3 class="element__title">Гора Эльбрус</h3>
                 <button type="button" class="element__like"></button>
-              </h3>
+              </div>
             </div>
           </div>
           <div class="element">
@@ -89,10 +89,10 @@
                 alt="Домбай"
                 class="element__photo"
               />
-              <h3 class="element__title">
-                Домбай
+              <div class="element__description">
+                <h3 class="element__title">Домбай</h3>
                 <button type="button" class="element__like"></button>
-              </h3>
+              </div>
             </div>
           </div>
           <div class="element">
@@ -102,10 +102,10 @@
                 alt="Карачаевск"
                 class="element__photo"
               />
-              <h3 class="element__title">
-                Карачаевск
+              <div class="element__description">
+                <h3 class="element__title">Карачаевск</h3>
                 <button type="button" class="element__like"></button>
-              </h3>
+              </div>
             </div>
           </div>
         </section>
@@ -116,7 +116,7 @@
       <div class="popup">
         <div class="popup__content">
           <button type="button" class="popup__close-button"></button>
-          <form class="popup__form">
+          <form id="Myform" name="popup_form" class="popup__form">
             <h2 class="popup__title">Редактировать профиль</h2>
             <input
               class="popup__input popup__input_type_name"
@@ -128,7 +128,7 @@
               type="text"
               name="description"
             />
-            <button type="button" class="popup__save-button">Сохранить</button>
+            <button type="submit" class="popup__save-button">Сохранить</button>
           </form>
         </div>
       </div>
