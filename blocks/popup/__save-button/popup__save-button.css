@@ -7,7 +7,7 @@
   font-weight: 400;
   min-width: 358px;
   min-height: 50px;
-  margin: 48px auto 37px;
+  margin: 48px auto 0;
   border: none;
   cursor: pointer;
   transition: opacity .2s;
