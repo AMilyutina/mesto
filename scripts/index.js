@@ -5,7 +5,7 @@ let modalWindowName = document.querySelector('.popup__input_type_name');
 let modalWindowDescription = document.querySelector('.popup__input_type_description');
 let profileName = document.querySelector('.profile__title');
 let profileDescription = document.querySelector('.profile__subtitle');
-let formElement = modalWindow.querySelector('.popup__content');
+let formElement = modalWindow.querySelector('.popup__form');
 
 
 function openModalWindow() {

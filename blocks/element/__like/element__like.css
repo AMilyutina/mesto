@@ -3,8 +3,6 @@
   width: 22px;
   height: 19px;
   border: none;
-  margin: auto;
-  margin-right: 20px;
   transition: opacity .2s;
   cursor: pointer;
 }
