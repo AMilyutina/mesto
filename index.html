@@ -30,82 +30,27 @@
           <button type="button" class="profile__add-button"></button>
         </section>
         <section class="elements">
-          <div class="element">
-            <div class="element__place">
-              <img
-                src="./images/Karachaevsk.jpg"
-                alt="Карачаевск"
-                class="element__photo"
-              />
-              <div class="element__description">
-                <h3 class="element__title">Карачаевск</h3>
-                <button type="button" class="element__like"></button>
+          <template id="element">
+            <div class="element">
+              <div class="element__place">
+                <button type="button" class="element__delete"></button>
+                <img
+                  src="./images/Karachaevsk.jpg"
+                  alt="Карачаевск"
+                  class="element__photo"
+                />
+                <div class="element__description">
+                  <h3 class="element__title">Карачаевск</h3>
+                  <button type="button" class="element__like"></button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="element">
-            <div class="element__place">
-              <img
-                src="./images/Elbrus.png"
-                alt="Гора Эльбрус"
-                class="element__photo"
-              />
-              <div class="element__description">
-                <h3 class="element__title">Гора Эльбрус</h3>
-                <button type="button" class="element__like"></button>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__place">
-              <img
-                src="./images/Dombai.png"
-                alt="Домбай"
-                class="element__photo"
-              />
-              <div class="element__description">
-                <h3 class="element__title">Домбай</h3>
-                <button type="button" class="element__like"></button>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__place">
-              <img
-                src="./images/Elbrus.png"
-                alt="Гора Эльбрус"
-                class="element__photo"
-              />
-              <div class="element__description">
-                <h3 class="element__title">Гора Эльбрус</h3>
-                <button type="button" class="element__like"></button>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__place">
-              <img
-                src="./images/Dombai.png"
-                alt="Домбай"
-                class="element__photo"
-              />
-              <div class="element__description">
-                <h3 class="element__title">Домбай</h3>
-                <button type="button" class="element__like"></button>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <div class="element__place">
-              <img
-                src="./images/Karachaevsk.jpg"
-                alt="Карачаевск"
-                class="element__photo"
-              />
-              <div class="element__description">
-                <h3 class="element__title">Карачаево-Черкесская Республика</h3>
-                <button type="button" class="element__like"></button>
-              </div>
+          </template>
+          <div class="element-popup">
+            <div class="element-popup__place">
+              <button type="button" class="element-popup__close-btn"></button>
+              <img class="element-popup__image" src="./images/Karachaevsk.jpg" alt="Карачаевск">
+              <p class="element-popup__title"></p>
             </div>
           </div>
         </section>
@@ -129,6 +74,27 @@
               name="description"
             />
             <button type="submit" class="popup__save-button">Сохранить</button>
+          </form>
+        </div>
+      </div>
+      <div class="popup-add">
+        <div class="popup-add__content">
+          <button type="button" class="popup-add__close-button"></button>
+          <form id="Myform-add" name="popup-add_form" class="popup-add__form">
+            <h2 class="popup-add__title">Новое место</h2>
+            <input
+              class="popup-add__input popup-add__input_type_name"
+              type="text"
+              name="name"
+              required placeholder="Название"
+            />
+            <input
+              class="popup-add__input popup-add__input_type_description"
+              type="text"
+              name="description"
+              required placeholder="Ссылка на картинку"
+            />
+            <button type="submit" class="popup-add__save-button">Создать</button>
           </form>
         </div>
       </div>
